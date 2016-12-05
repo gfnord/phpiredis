@@ -75,6 +75,21 @@ $response = phpiredis_multi_command($redis, array(
     'GET test',
 ));
 ```
+## Changelog ##
+
+v.0.1
+Fixed the following functions names, changed on hiredis 1.0.0 (unreleased)
+
+| Old                         | New                    |
+| --------------------------- | ---------------------- |
+| redisReplyReaderCreate      | redisReaderCreate      |
+| redisReplyReaderFree        | redisReaderFree        |
+| redisReplyReaderFeed        | redisReaderFeed        |
+| redisReplyReaderGetReply    | redisReaderGetReply    |
+| redisReplyReaderSetPrivdata | redisReaderSetPrivdata |
+| redisReplyReaderGetObject   | redisReaderGetObject   |
+| redisReplyReaderGetError    | redisReaderGetError    |
+
 
 ## Contributing ##
 
